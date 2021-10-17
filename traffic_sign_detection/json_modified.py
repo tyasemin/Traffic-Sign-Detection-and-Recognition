@@ -12,7 +12,6 @@ file=open(JSON_TXT_DIR,"r")
 allLabel_raw=file.readlines() #iterable
 file.close()
 
-#implement strip function for each line
 allLabel=[]
 file=open(os.path.join(__location__,"allLabel_modified.txt"),"w")
 for line in allLabel_raw:
