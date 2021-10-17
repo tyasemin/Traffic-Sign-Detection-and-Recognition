@@ -96,7 +96,7 @@ def training(path,ROOT):
 
     
 
-ROOT='C:/Users/yasemin/Desktop/classificationv1'
+ROOT='.../classificationv1'
 DATASET_DIR=os.path.join(ROOT,"DATASET")
 TRAIN_DIR=os.path.join(DATASET_DIR,"Train")
 
