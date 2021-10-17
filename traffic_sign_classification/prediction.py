@@ -113,10 +113,4 @@ def visualization(ROOT):
 
 
 
-visualization("C:/Users/yasemin/Desktop/classificationv1")
-
-
-
-
-
-    
+visualization(".../classificationv1")    
