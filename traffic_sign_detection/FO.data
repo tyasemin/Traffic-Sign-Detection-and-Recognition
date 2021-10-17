@@ -1,0 +1,6 @@
+classes= 1
+train  = ./FO/train.txt
+valid  = ./FO/val.txt
+names = ./FO/FO.names
+backup = backup
+
