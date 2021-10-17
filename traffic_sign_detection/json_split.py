@@ -26,7 +26,7 @@ def write_paths(allLabel):
     img_path_file.close()
 
 
-#modifies labels for desired order
+#modifies labels for required order
 def modify_label_order(lbl_raw):
     x_min,y_min,x_max,y_max,id=lbl_raw.split(",")
     width=int(int(x_max)-int(x_min))
@@ -38,8 +38,6 @@ def modify_label_order(lbl_raw):
     lbl_mod=str(id)+" "+str(x_center/1920)+" "+str(y_center/1208)+" "+str(width/1920)+" "+str(height/1208)+"\n"
     return lbl_mod
 
-
-
 def create_label(allLabel):
     #get image names
     IMG_DIR=os.path.join(__location__,"img")
@@ -49,8 +47,6 @@ def create_label(allLabel):
     img_path_file=open(os.path.join(__location__,"all_path.txt"),"r")
     img_paths=img_path_file.readlines()
     img_path_file.close()
-
-
 
     for i in range(len(allLabel)):
         #find image name
@@ -70,47 +66,7 @@ def create_label(allLabel):
             label_file.write(modify_label_order(label)) #write modified format
         label_file.close()
 
-
-
 write_paths(allLabel)
 create_label(allLabel)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
-
-
-
-
-
-
-
-     
-    
-    
-    
-
-
-    
-
-
 file.close()
-
-
-
-
