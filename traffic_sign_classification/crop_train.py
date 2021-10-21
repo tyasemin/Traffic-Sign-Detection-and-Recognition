@@ -4,7 +4,7 @@ import os
 import json
 import cv2
 
-ROOT_DIR= "C:/Users/yasemin/Desktop/internvL/ann/"
+ROOT_DIR= "C:.../internvL/ann/"
 json_names=os.listdir(ROOT_DIR)
 print(json_names)
 
@@ -14,7 +14,7 @@ def return_image_name(json_name):
 i=0
 for jsn in json_names:
   JSON_PATH=os.path.join(ROOT_DIR,jsn)
-  IMG_PATH="C:/Users/yasemin/Desktop/internvL/img"
+  IMG_PATH="C:.../internvL/img"
 
   with open(JSON_PATH,'r') as f:
     jsnfile=json.load(f)
@@ -41,7 +41,7 @@ for jsn in json_names:
         try:
             crop_img = img[y_0:y_0+h, x_0:x_0+w]
             plt.imshow(crop_img)
-            out_path=os.path.join("C:/Users/yasemin/Desktop/internvL/cropped",str(i)+".png")
+            out_path=os.path.join("C:.../internvL/cropped",str(i)+".png")
             cv2.imwrite(out_path,crop_img)
             i+=1
         except ValueError:
