@@ -1,6 +1,6 @@
 # Ford Otosan Internship Project-2021
 
-## Detection And Classification Traffic of Signs
+## Detection And Classification of Traffic Signs
 <br>
 Project Progress And Overview: <a href="https://github.com/tyasemin/FO-Internship-Project-2/blob/main/Overview.ipynb">[1] </a>
 <br>
